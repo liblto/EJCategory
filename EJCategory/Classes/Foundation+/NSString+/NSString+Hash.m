@@ -20,6 +20,7 @@
     }
     return ret;
 }
+
 - (NSString *)fileMd5String {
     // 生成文件的MD5   校验的是压缩包的MD5  判断下载是否正确
     NSFileHandle *handle = [NSFileHandle fileHandleForReadingAtPath:self];
