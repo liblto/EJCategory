@@ -1,5 +1,5 @@
 PODS:
-  - EJCategory (1.0)
+  - EJCategory (1.2)
 
 DEPENDENCIES:
   - EJCategory (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  EJCategory: 5286e31bc2b3dc0933830bfb70aaeed0f62523d9
+  EJCategory: cdbaea4629a714b0745f313fe4dc688e7728d20b
 
 PODFILE CHECKSUM: 10fd901added30169f35a5f2d2fc8ae351e60104
 
