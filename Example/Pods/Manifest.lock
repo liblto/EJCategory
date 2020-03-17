@@ -1,0 +1,16 @@
+PODS:
+  - EJCategory (1.0)
+
+DEPENDENCIES:
+  - EJCategory (from `../`)
+
+EXTERNAL SOURCES:
+  EJCategory:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EJCategory: 5286e31bc2b3dc0933830bfb70aaeed0f62523d9
+
+PODFILE CHECKSUM: 10fd901added30169f35a5f2d2fc8ae351e60104
+
+COCOAPODS: 1.8.4

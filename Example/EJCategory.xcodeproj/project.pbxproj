@@ -40,7 +40,7 @@
 		290CD77B219A6212FE99081A /* Pods-EJCategory_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EJCategory_Example.debug.xcconfig"; path = "Target Support Files/Pods-EJCategory_Example/Pods-EJCategory_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		48033DCF2DB4969A2FDC0D6A /* Pods_EJCategory_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EJCategory_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E12836F3CE4F23B361A772 /* Pods_EJCategory_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EJCategory_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FEB76EE588175CD491B66D3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4FEB76EE588175CD491B66D3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* EJCategory_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EJCategory_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,10 +63,10 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		762C1CD73C71004A1C4BAEA9 /* Pods-EJCategory_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EJCategory_Example.release.xcconfig"; path = "Target Support Files/Pods-EJCategory_Example/Pods-EJCategory_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		921DF8257B8C99E580843735 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		921DF8257B8C99E580843735 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BDFDCEB39F6D1085BAF4FAD2 /* Pods-EJCategory_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EJCategory_Tests.release.xcconfig"; path = "Target Support Files/Pods-EJCategory_Tests/Pods-EJCategory_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F155A4D1CC635C66AF58339E /* Pods-EJCategory_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EJCategory_Tests.debug.xcconfig"; path = "Target Support Files/Pods-EJCategory_Tests/Pods-EJCategory_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F69CBE485770B32A911BEAEC /* EJCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = EJCategory.podspec; path = ../EJCategory.podspec; sourceTree = "<group>"; };
+		F69CBE485770B32A911BEAEC /* EJCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = EJCategory.podspec; path = ../EJCategory.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				F155A4D1CC635C66AF58339E /* Pods-EJCategory_Tests.debug.xcconfig */,
 				BDFDCEB39F6D1085BAF4FAD2 /* Pods-EJCategory_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

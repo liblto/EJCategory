@@ -1,9 +1,5 @@
 # EJCategory
 
-[![CI Status](https://img.shields.io/travis/1372331034@qq.com/EJCategory.svg?style=flat)](https://travis-ci.org/1372331034@qq.com/EJCategory)
-[![Version](https://img.shields.io/cocoapods/v/EJCategory.svg?style=flat)](https://cocoapods.org/pods/EJCategory)
-[![License](https://img.shields.io/cocoapods/l/EJCategory.svg?style=flat)](https://cocoapods.org/pods/EJCategory)
-[![Platform](https://img.shields.io/cocoapods/p/EJCategory.svg?style=flat)](https://cocoapods.org/pods/EJCategory)
 
 ## Example
 
@@ -22,7 +18,7 @@ pod 'EJCategory'
 
 ## Author
 
-1372331034@qq.com, 1372331034@qq.com
+liblto => 1372331034@qq.com
 
 ## License
 
