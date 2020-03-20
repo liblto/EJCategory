@@ -13,6 +13,7 @@
 #import "NSDate+Extension.h"
 #import "NSObject+Extension.h"
 #import "NSString+Hash.h"
+#import "NSString+TextCalculation.h"
 #import "UIApplication+Extension.h"
 #import "UIButton+Custom.h"
 #import "UICollectionViewCell+IndexPath.h"

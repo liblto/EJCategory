@@ -39,11 +39,6 @@
 @property (nonatomic, readonly) CGFloat js_bottom;
 @property (nonatomic, readonly) CGFloat js_right;
 
-#pragma mark - Imbueset
-- (void)fillWidth;
-- (void)fillHeight;
-- (void)fill;
-
 #pragma mark - SafeArea
 - (CGFloat)safeAreaBottomGap;
 - (CGFloat)safeAreaTopGap;

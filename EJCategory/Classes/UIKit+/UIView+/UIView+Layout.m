@@ -102,21 +102,6 @@ static void *kUIViewLayoutMethodPropertyRightGap = &kUIViewLayoutMethodPropertyR
     return self.frame.size.width + self.frame.origin.x;
 }
 
-#pragma mark - Imbueset
-- (void)fillWidth {
-    self.js_width = self.superview.js_width;
-    self.js_x = 0;
-}
-
-- (void)fillHeight {
-    self.js_height = self.superview.js_height;
-    self.js_y = 0;
-}
-
-- (void)fill {
-    self.frame = CGRectMake(0, 0, self.superview.js_width, self.superview.js_height);
-}
-
 #pragma mark - SafeArea
 - (CGFloat)safeAreaBottomGap {
     NSNumber *gap = objc_getAssociatedObject(self, kUIViewLayoutMethodPropertyBottomGap);
