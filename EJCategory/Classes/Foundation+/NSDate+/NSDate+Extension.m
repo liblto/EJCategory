@@ -75,6 +75,18 @@ static const NSInteger kMinute    = 60;
     return newDate;
 }
 
++ (NSDate *)date:(NSString *)datestr byFormat:(NSString *)format {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setLocale:[NSLocale currentLocale]];
+    [dateFormatter setTimeZone:[NSTimeZone localTimeZone]];
+    [dateFormatter setDateFormat:format];
+    NSDate *date = [dateFormatter dateFromString:datestr];
+#if ! __has_feature(objc_arc)
+    [dateFormatter release];
+#endif
+    return date;
+}
+
 #pragma mark - String Properties
 - (NSString *)stringWithDateStyle:(NSDateFormatterStyle)dateStyle timeStyle:(NSDateFormatterStyle)timeStyle {
     NSDateFormatter *formatter = [NSDateFormatter new];

@@ -9,45 +9,51 @@
 
 @implementation UIView (Appearance)
 
-- (void)setRoundedCorners:(UIRectCorner)corners radii:(CGSize)radii {
-    UIBezierPath *rounded = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:radii];
-    CAShapeLayer *shape = [[CAShapeLayer alloc] init];
-    [shape setPath:rounded.CGPath];
-    self.layer.mask = shape;
+
+- (void)js_setRoundedCorners:(UIRectCorner)corners radii:(CGFloat)radii {
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:CGSizeMake(radii, radii)];
+    
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
 }
 
-- (void)setRoundedCorners:(UIRectCorner)corners radii:(CGSize)radii viewRect:(CGRect)rect {
-    UIBezierPath *rounded = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:corners cornerRadii:radii];
-    CAShapeLayer *shape = [[CAShapeLayer alloc] init];
-    [shape setPath:rounded.CGPath];
-    self.layer.mask = shape;
+- (void)js_setRoundedCorners:(UIRectCorner)corners radii:(CGFloat)radii viewRect:(CGRect)rect {
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:corners cornerRadii:CGSizeMake(radii, radii)];
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
 }
 
-- (void)setRoundedCorners:(UIRectCorner)corners radii:(CGSize)radii borderColor:(UIColor *)borderColor width:(CGFloat )width {
-    UIBezierPath *rounded = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:radii];
-    CAShapeLayer *shape = [[CAShapeLayer alloc] init];
-    [shape setPath:rounded.CGPath];
-    self.layer.mask = shape;
+- (void)js_setRoundedCorners:(UIRectCorner)corners radii:(CGFloat)radii borderColor:(UIColor *)borderColor width:(CGFloat )width {
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:CGSizeMake(radii, radii)];
+    
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
     
     CAShapeLayer *graphicLayer = [CAShapeLayer layer];
-    graphicLayer.path = rounded.CGPath;
+    graphicLayer.path = maskPath.CGPath;
     graphicLayer.lineWidth = width;
     graphicLayer.strokeColor = borderColor.CGColor;
     graphicLayer.fillColor = UIColor.clearColor.CGColor;
     [self.layer addSublayer:graphicLayer];
 }
 
-- (void)setBorderColor:(UIColor *)borderColor width:(CGFloat )width {
-    UIBezierPath *rounded = [UIBezierPath bezierPathWithRect:self.bounds];
+- (void)js_setBorderColor:(UIColor *)borderColor width:(CGFloat)width {
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRect:self.bounds];
     CAShapeLayer *graphicLayer = [CAShapeLayer layer];
-    graphicLayer.path = rounded.CGPath;
+    graphicLayer.path = maskPath.CGPath;
     graphicLayer.lineWidth = 1;
     graphicLayer.strokeColor = borderColor.CGColor;
     graphicLayer.fillColor = UIColor.clearColor.CGColor;
     [self.layer addSublayer:graphicLayer];
 }
 
-- (void)setShadowPathWithColor:(UIColor *)shadowColor offset:(CGSize )offset opacity:(CGFloat )opacity radius:(CGFloat )radius {
+- (void)js_setShadowPathWithColor:(UIColor *)shadowColor offset:(CGSize)offset opacity:(CGFloat )opacity radius:(CGFloat )radius {
     self.layer.cornerRadius = radius;
     
     self.layer.shadowColor = shadowColor.CGColor;

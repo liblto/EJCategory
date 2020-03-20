@@ -24,6 +24,7 @@
 #import "UITableViewCell+IndexPath.h"
 #import "UITextField+Formatter.h"
 #import "UIView+Appearance.h"
+#import "UIView+Layout.h"
 #import "UIViewController+Extension.h"
 
 FOUNDATION_EXPORT double EJCategoryVersionNumber;
